@@ -1,14 +1,91 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title style="color:white !important;">
+            <ion-icon ios="ios-microphone" md="md-microphone"></ion-icon> <b> <span style="color:white;">සිංහල සිංදු පොත </span></b>
+        </ion-title>
+        <ion-buttons end>	 	    
+            <button ion-button icon-only (click)="presentHelp()" class="btn-end-icons"><ion-icon ios="ios-help-circle" md="md-help-circle"></ion-icon></button>
+            <button ion-button icon-only (click)="exitApp()" class="btn-end-icons"><ion-icon md="md-close-circle"></ion-icon></button>
+        </ion-buttons>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-list>
+
+        <ion-item (click)="openAmaradewa()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/amaradewa.png">
+            </ion-avatar>
+            <h2 class="artistName">ඩබ්.ඩී අමරදේව</h2>
+        </ion-item>
+        <ion-item (click)="openAmarasiri()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/amarasiri.png">
+            </ion-avatar>
+            <h2 class="artistName">අමරසිරි පීරිස්</h2>
+        </ion-item>
+        <ion-item (click)="openSunil()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/sunil.png">
+            </ion-avatar>
+            <h2 class="artistName">සුනිල් එදිරිසිංහ</h2>
+        </ion-item>
+        <ion-item (click)="openTM()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/tm.png">
+            </ion-avatar>
+            <h2 class="artistName">ටී.එම් ජයරත්න</h2>
+        </ion-item>
+        <ion-item (click)="openVictor()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/victor.png">
+            </ion-avatar>
+            <h2 class="artistName">වික්ටර් රත්නායක</h2>
+        </ion-item>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/NiroshaVirajini.jpg">
+            </ion-avatar>
+            <h2 class="artistName">නිරෝෂා විරාජිනී</h2>
+        </ion-item> 
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/diwul.png">
+            </ion-avatar>
+            <h2 class="artistName">කරුණාරත්න දිවුල්ගනගේ</h2>
+        </ion-item> 
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/edward.png">
+            </ion-avatar>
+            <h2 class="artistName">එඩ්වඩ් ජයකොඩි</h2>
+        </ion-item>     
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/sanath.png">
+            </ion-avatar>
+            <h2 class="artistName">සනත් නන්දසිරි</h2>
+        </ion-item> 
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/nanda.png">
+            </ion-avatar>
+            <h2 class="artistName">නන්දා මාලනී</h2>
+        </ion-item> 
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/chamara.png">
+            </ion-avatar>
+            <h2 class="artistName">චාමර වීරසිංහ</h2>
+        </ion-item> 
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/chandana.png">
+            </ion-avatar>
+            <h2 class="artistName">චන්දන ලියනාරච්චි</h2>
+        </ion-item> 
+
+    </ion-list>
+
 </ion-content>
