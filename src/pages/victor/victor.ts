@@ -1,0 +1,90 @@
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {AudioProvider} from 'ionic-audio';
+
+/**
+ * Generated class for the VictorPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+@IonicPage()
+@Component({
+  selector: 'page-victor',
+  templateUrl: 'victor.html',
+})
+export class VictorPage {
+
+  myTracks: any[];
+    myTracks2: any[];
+    myTracks3: any[];
+    myTracks4: any[];
+    myTracks5: any[];
+    myTracks6: any[];
+    allTracks: any[];
+    selectedTrack: any;
+
+    constructor(public navCtrl: NavController, public navParams: NavParams,private _audioProvider: AudioProvider) {
+    }
+    
+    ngAfterContentInit() {
+        // get all tracks managed by AudioProvider so we can control playback via the API
+        this.allTracks = this._audioProvider.tracks;
+    }
+
+    playSelectedTrack() {
+        // use AudioProvider to control selected track 
+        this._audioProvider.play(this.selectedTrack);
+    }
+
+    pauseSelectedTrack() {
+        // use AudioProvider to control selected track 
+        this._audioProvider.pause(this.selectedTrack);
+    }
+
+    onTrackFinished(track: any) {
+        console.log('Track finished', track)
+    }
+
+    hanthaneta() {
+        this.myTracks = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            title: 'හන්තානට පායන සඳ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+    
+    hanthaneta2() {
+        this.myTracks2 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            title: 'හන්තානට පායන සඳ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+    
+    hanthaneta3() {
+        this.myTracks3 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            title: 'හන්තානට පායන සඳ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+    
+    hanthaneta4() {
+        this.myTracks4 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            title: 'හන්තානට පායන සඳ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad VictorPage');
+  }
+
+}
