@@ -5,11 +5,9 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
     <ion-navbar>
         <ion-title>සුනිල් එදිරිසිංහ</ion-title>
     </ion-navbar>
-
 </ion-header>
 
 
@@ -46,7 +44,7 @@
                             <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
                         </ion-thumbnail>
                         <div item-content style="width:100%">
-                            <p><strong>{{audio.title}}</strong> ⚬ <em>{{audio.artist}}</em></p>
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
                             <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
                         </div>
                     </ion-item>    
@@ -85,7 +83,7 @@
                             <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
                         </ion-thumbnail>
                         <div item-content style="width:100%">
-                            <p><strong>{{audio.title}}</strong> ⚬ <em>{{audio.artist}}</em></p>
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
                             <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
                         </div>
                     </ion-item>    
@@ -125,7 +123,7 @@
                             <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
                         </ion-thumbnail>
                         <div item-content style="width:100%">
-                            <p><strong>{{audio.title}}</strong> ⚬ <em>{{audio.artist}}</em></p>
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
                             <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
                         </div>
                     </ion-item>    
@@ -168,13 +166,353 @@
                             <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
                         </ion-thumbnail>
                         <div item-content style="width:100%">
-                            <p><strong>{{audio.title}}</strong> ⚬ <em>{{audio.artist}}</em></p>
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
                             <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
                         </div>
                     </ion-item>    
                 </audio-track>
             </ion-list> 
             <button class="listen" ion-button color="secondary" (click)="sandakada()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+        </ion-slide>
+
+        <ion-slide style="background-color:">
+            <h2><b>දෙවැනි බුදුන් ලෙස</b> </h2>
+            <p>
+                දෙවැනි බුදුන් ලෙස<br>
+                ලොවම උවම් කල<br>
+                ලොවක පිදුම් ලද<br>
+                ලොවට උතුම් ලද<br>
+                අම්මා…
+                අම්මා…
+                අම්මා……<br><br>
+
+                දෙසවන් සනහා<br>
+                මා නැලවූ ඔබ<br>
+                මියුරු මියැසියේ<br>
+                අරුත් කියාදුනි<br>
+                ඒ මියැසියෙ… අද<br>
+                මා ගයනා විට<br>
+                මා සිප ගන්නට<br>
+                ඔබ මා ලග නැත<br>
+                අම්මා…
+                අම්මා…
+                අම්මා……<br><br>
+
+                ඇසට අඩන්නට<br>
+                කදුලැලි දුන් ඔබ<br>
+                ළතැවුල් දරනා<br>
+                දිරිය ලබා දුනි<br>
+                ඒ දිරියෙන්…<br>
+                ලොව ජය ලබනා විට<br>
+                මා සිප ගන්නට<br>
+                ඔබ මා ලග නැත<br>
+                අම්මා…
+                අම්මා…
+                අම්මා……
+
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks5"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="dewaniBudun()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+        </ion-slide>
+
+        <ion-slide style="background-color:">
+            <h2><b>හංස රාජිනී සේ </b> </h2>
+            <p>
+                හංස රාජිනී සේ 
+                හංස රාජිනී සේ 
+                මන මෝහනීය රංගනීයේ <br>
+                හංස රාජිනී සේ
+                මන මෝහනීය රංගනීයේ <br>
+                හංස රාජිනී<br><br>
+
+                සැලෙන නයන යුග මදහස පාලා <br>
+                සැලෙන නයන යුග<br>
+                සැලෙන නයන යුග මදහස පාලා <br>
+
+                සැලෙන නයන යුග මදහස පාලා <br>
+                නූපුර ජාල හඬා නද දීලා <br>
+                සැලෙන නයන යුග මදහස පාලා <br>
+
+                සැලෙන නයන යුග මදහස පාලා <br>
+                නූපුර ජාල හඬා නද දීලා <br>
+                සැලෙන නයන යුග<br>
+                සැලෙන නයන යුග මදහස පාලා <br>
+                නූපුර ජාල හඬා නද දීලා <br>
+                රඟනා තාලේ<br><br>
+
+                හංස රාජිනී සේ 
+                හංස රාජිනී 
+                හංස රාජිනී සේ 
+                හංස රාජිනී සේ <br>
+                මන මෝහනීය රංගනීයේ <br>
+                හංස රාජිනී 
+                හංස රාජිනී 
+                හංස රාජිනී 
+
+
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks6"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="hansaRajini()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+        </ion-slide>
+
+        <ion-slide style="background-color:">
+            <h2><b> ලෙන්චිනා මගෙ නංගියේ ඇයි</b> </h2>
+            <p>
+                ලෙන්චිනා මගෙ නංගියේ ඇයි<br>
+                ගංතෙරට වී ගොම්මනේ //<br>
+
+                පෙත්තරේ ලඟ පැන් තොටේ<br>
+                ගම්මානයේ පව් සෝදනා<br>
+                රත්තරන් වී කළු වලාකුළු<br>
+                චන්ද්‍රයා සේ පායලා<br>
+                ලෙන්චිනා ඇති වැඩ කලා දැන්<br>
+                ගෙදර යං කළුවර වුණා<br><br>
+
+                ලෙන්චිනා මගෙ... //<br><br>
+
+                පින්වතුන් කැල ඇන්ද සළුපිලි<br>
+                සේදුවා නුඹ සේදුවා<br>
+                තාම නෑ කිලිකුණු ගිහින් ඒ<br>
+                කිම්ද නොදැනේ කාරණා<br>
+                සේදිලා පරිශුද්ධ වීමෙන්<br>
+                යුග දෑත් නුඹෙ බබලනා
+
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks7"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="lenchina()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+        </ion-slide>
+
+        <ion-slide style="background-color:">
+            <h2><b>මිනිසා සුවඳයි මල සේ</b> </h2>
+            <p>
+                මිනිසා සුවඳයි මල සේ   <br>                                      
+
+                නුවණින් එළියයි හිරු සේ<br>
+                පරවී වැටිලා... ඒ හිරු මල මේ දෙරණේ<br><br>
+
+                පොලවේ උරුමේ කියමින්<br>
+                බිලිදී විහිගුම් ගුණදම්.<br>
+                දහසින් මියෙනා සටනින්.<br>
+                අඟලේ හිමිකම් සොයමින්<br><br>
+
+                ලොව නහවා සෝ කඳුලින්<br>
+                සැනහේ.. ජය පැන් පුරමින්<br><br>
+
+                මිනිසා සුවඳයි මල සේ...<br><br>
+
+                උණු ලේ විස වී සිරුරේ<br>
+                ඉසුරන් ගැටෙනා අතරේ<br>
+                ගිනි මල් පිපිලා අහසේ<br>
+                ඇවිලේ ගිනිදැල් සයුරේ<br>
+                සා පවසින් ඉකි බිඳිනා<br>
+                සුසුමෙන් යදියන් හෙලනා<br><br>
+
+
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks8"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="minisa()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+        </ion-slide>
+
+        <ion-slide style="background-color:">
+            <h2><b> පාට දේදුනු සේදිලා</b> </h2>
+            <p>
+                පාට දේදුනු සේදිලා<br>
+                ඈත කදු යායේ<br>
+                සීත රෑ සද පීදිලා<br>
+                නීල තරු යායේ<br><br>
+
+                ඈ ලවන් තෙරේ සෝ ගී සුසුම් නැගී<br>
+                මීදුම් වලා ලෙසින් පාවී<br>
+                ඈතින් හැපී බිදේ…<br><br>
+
+                පාට දේදුනු සේදිලා...<br><br>
+
+                මා නුවන් බියේ පීනා නැගෙන් සදේ<br>
+                පායා දුරින් ඇදී ඈ මෙන් පාවී නොයන් සදේ<br><br>
+
+                පාට දේදුනු සේදිලා...<br>
+
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks9"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="pataDedunu()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+        </ion-slide>
+
+        <ion-slide style="background-color:">
+            <h2><b> ශිල්ප සොඳින් දැනගන්න ගිහින් නුඹ</b> </h2>
+            <p>
+                ශිල්ප සොඳින් දැනගන්න ගිහින් නුඹ<br>
+                යහතින්දෝ කොළොම්පුරේ<br>
+                ඉන්න නොවේ මියැදෙන්න හිතයි මට<br>
+                නුඹ නැති හන්දා මං තනියේ<br><br>
+
+                හැන්දෑ අවරට දැක්කද නංගෝ<br>
+                තුරුළු වෙලා ඉන්නා ජෝඩූ<br>
+                රංචු මිසක තනියෙන්ම නොයන්නේ<br>
+                ඒ නුවරට උඹ කිරිකෝඩූ<br><br>
+
+                නාමල් සුවඳක් පෙරදා වාගේ<br>
+                අද නැහැ නොවැ ඇළ ඉස්මත්තේ<br>
+                නාමල් සුවඳට බඹරු ඇදේදෝ<br>
+                මගතොට නුඹ යනෙනා වාරේ
+
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks10"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="shilpaSondin()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+        </ion-slide>
+
+        <ion-slide style="background-color:">
+            <h2><b>  සොයා පිළිසරණක් ලොවෙන් </b> </h2>
+            <p>
+                සොයා පිළිසරණක් ලොවෙන් මා<br>
+                නොලැබ හව්හරණක්<br>
+                භවෙන් භවයේ පතා ආයෙමි<br>
+                හිමියනේ ඔබේ<br>
+                ඔබේ බුදු වදනක්<br><br>
+
+                ගෙවා සුවහස් යොදුන් මේ කතරේ<br>
+                සොයා යන මං නොදැන මේ අඳුරේ//<br>
+                යුගෙන් යුගයේ පතා ආයෙමි<br>
+                හිමියනේ ඔබේ<br>
+                ඔබේ මුදු සිහිලක්<br><br>
+
+                සොයා පිළිසරණක්...<br><br>
+
+                මහා කරුණා නුවන් දිය ගැඹරේ<br>
+                ගිලී සැනහී නිවා ගිනි සසරේ//<br>
+                පහන් වැට සේ සොයා ආයෙමි<br>
+                හිමියනේ ඔබේ<br>
+                ඔබේ නෙතු කැල්මක්
+
+                සොයා පිළිසරණක්...
+
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks11"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="soyaaPilisaranak()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+        </ion-slide>
+
+        <ion-slide style="background-color:">
+            <h2><b> කවුරුන්ද ඔබ මගේ </b> </h2>
+            <p>
+                කවුරුන්ද ඔබ මගේ කවුරුන්ද මා ඔබේ<br>
+                කවුරුන්ද ඔබ මගේ කවුරුන්ද මා ඔබේ    <br>
+                දෙතොල් සලා මුදු සිනහ නගන්නෙමු<br>
+                දෙනෙත් පුරා පිරි කඳුළු සලන්නෙමු //<br><br>
+
+                හදවත් ගැහෙනා රිද්මය අතරේ<br>
+                සිතින් ගතින් එක්තැන් වී ඉන්නෙමු<br><br>
+
+                ප්‍රේමය ගොළු වී හඬා වැටීලා<br>
+                ඔබ හද මා හද රිදවන මොහොතේ //<br>
+                ජීවිතයට හුරු පැරදුම හමුවේ<br>
+                නොදොඩා ගොළුවී බලා සිටින්නෙමු
+
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks12"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="kawurunda()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
         </ion-slide>
 
     </ion-slides>

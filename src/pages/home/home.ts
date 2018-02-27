@@ -29,7 +29,7 @@ export class HomePage {
     }
     
     openVictor() {
-        this.navCtrl.push('AmaradewaPage');
+        this.navCtrl.push('VictorPage');
     }
 
     presentHelp() {

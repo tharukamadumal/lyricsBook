@@ -22,6 +22,12 @@ export class SunilPage {
     myTracks4: any[];
     myTracks5: any[];
     myTracks6: any[];
+    myTracks7: any[];
+    myTracks8: any[];
+    myTracks9: any[];
+    myTracks10: any[];
+    myTracks11: any[];
+    myTracks12: any[];
     allTracks: any[];
     selectedTrack: any;
 
@@ -81,7 +87,72 @@ export class SunilPage {
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
     }
-
+    dewaniBudun() {
+        this.myTracks5 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Devani%20Budun%20Lesa__Sunil%20Eadirisinghe_mp3[sarigama.lk].mp3',
+            artist: ' දෙවැනි බුදුන් ලෙස',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+    hansaRajini() {
+        this.myTracks6 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Hansa%20Rajini__Sunil%20Eadirisinghe_mp3[sarigama.lk].mp3',
+            artist: 'හංස රාජිනී සේ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+    lenchina() {
+        this.myTracks7 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Lenchina%20Mage%20Nangiye__Sunil%20Eadirisinghe_mp3[sarigama.lk].mp3',
+            artist: 'ලෙන්චිනා මගෙ නංගියේ ඇයි',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+    minisa() {
+        this.myTracks8 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Minisa%20Suwandai%20Malase__Sunil%20Eadirisinghe_mp3[sarigama.lk].mp3',
+            artist: 'මිනිසා සුවඳයි මල සේ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+    pataDedunu() {
+        this.myTracks9 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Paata%20Dedunu%20__Sunil%20Eadirisinghe_mp3[sarigama.lk].mp3',
+            artist: 'පාට දේදුනු සේදිලා',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+    shilpaSondin() {
+        this.myTracks10 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Shilpa%20Sondin__Sunil%20Eadirisinghe_mp3[sarigama.lk].mp3',
+            artist: 'ශිල්ප සොඳින් දැනගන්න ගිහින් නුඹ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+    soyaaPilisaranak() {
+        this.myTracks11 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Soya%20Pilisaranak_Sunil%20Eadirisinghe__Sunil%20Eadirisinghe_mp3[sarigama.lk].mp3',
+            artist: ' සොයා පිළිසරණක් ලොවෙන්',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+    
+     kawurunda() {
+        this.myTracks12 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Kawurunda%20Oba%20Mage__Sunil%20Eadirisinghe_mp3[sarigama.lk].mp3',
+            artist: ' කවුරුන්ද ඔබ මගේ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+    
     ionViewDidLoad() {
         console.log('ionViewDidLoad SunilPage');
     }

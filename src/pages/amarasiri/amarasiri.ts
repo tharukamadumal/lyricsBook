@@ -22,12 +22,15 @@ export class AmarasiriPage {
     myTracks4: any[];
     myTracks5: any[];
     myTracks6: any[];
+    myTracks7: any[];
+    myTracks8: any[];
+    myTracks9: any[];
     allTracks: any[];
     selectedTrack: any;
 
-    constructor(public navCtrl: NavController, public navParams: NavParams,private _audioProvider: AudioProvider) {
+    constructor(public navCtrl: NavController, public navParams: NavParams, private _audioProvider: AudioProvider) {
     }
-    
+
     ngAfterContentInit() {
         // get all tracks managed by AudioProvider so we can control playback via the API
         this.allTracks = this._audioProvider.tracks;
@@ -59,7 +62,7 @@ export class AmarasiriPage {
     magePunchi() {
         this.myTracks2 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'මගේ පුන්චි රෝස මලේ', 
+            artist: 'මගේ පුන්චි රෝස මලේ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
@@ -68,8 +71,8 @@ export class AmarasiriPage {
     obaApple() {
         this.myTracks3 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'ඔබ ඇපල් මලක් වාගේ',  
-            art: 'assets/imgs/play.png', 
+            artist: 'ඔබ ඇපල් මලක් වාගේ',
+            art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
     }
@@ -77,31 +80,58 @@ export class AmarasiriPage {
     landune() {
         this.myTracks4 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'ළඳුනේ', 
-            art: 'assets/imgs/play.png', 
+            artist: 'ළඳුනේ',
+            art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
     }
-	
+
 
     malakUne() {
         this.myTracks5 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'මලක් උනේ ඇයි', 
+            artist: 'මලක් උනේ ඇයි',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
-    }	
+    }
 
     sonduriya() {
         this.myTracks6 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',         
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
             artist: 'සොඳුරිය',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
     }
-	
+
+    hithaPura() {
+        this.myTracks7 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Hithapura%20Mal__Amarasiri%20Peiris_mp3[sarigama.lk].mp3',
+            artist: 'හිත පුරා මල් පිපෙන වසන්තය ඇවිදින් ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    ikigasa() {
+        this.myTracks8 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Iki%20Gasa%20Handana_Amarasiri%20Peiris_mp3[sarigama.lk].mp3',
+            artist: 'ඉකි ගසා හඩන අතීතයක',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    irithelunu() {
+        this.myTracks9 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Iri%20Thelunu__Amarasiri%20Peiris_mp3[sarigama.lk].mp3',
+            artist: ' ඉරි තැලුනු වළා උඩු වියන් යටන් ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
     ionViewDidLoad() {
         console.log('ionViewDidLoad AmarasiriPage');
     }
