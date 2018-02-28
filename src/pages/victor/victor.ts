@@ -120,7 +120,7 @@ export class VictorPage {
     miyuruKalpana() {
         this.myTracks8 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Miyuru%20Kalpana.__Victor%20Rathnayake_mp3[sarigama.lk].mp3',
-            title: 'නන්ගියෙ…. මල්ලියෙ',
+            title: ' මියුරු කල්පනා',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
@@ -129,7 +129,7 @@ export class VictorPage {
     pembaraMadu() {
         this.myTracks9 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Pembara%20Madu%20Mage__Victor%20Rathnayake_mp3[sarigama.lk].mp3',
-            title: 'නන්ගියෙ…. මල්ලියෙ',
+            title: 'පෙම්බර මධු මගේ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
@@ -138,7 +138,7 @@ export class VictorPage {
     apeRatak() {
         this.myTracks10 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Koheda%20Koheda%20Ape%20Lowak__Victor%20Rathnayake_mp3[sarigama.lk].mp3',
-            title: 'නන්ගියෙ…. මල්ලියෙ',
+            title: 'කොහේද කොහේද',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
@@ -147,7 +147,7 @@ export class VictorPage {
     sihithaHathak() {
         this.myTracks11 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sihina%20Sathak__Victor%20Rathnayake_mp3[sarigama.lk].mp3',
-            title: 'නන්ගියෙ…. මල්ලියෙ',
+            title: 'සිහින සතක් දුටුවෙමි මම ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
