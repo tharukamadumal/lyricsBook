@@ -23,6 +23,10 @@ export class VictorPage {
     myTracks5: any[];
     myTracks6: any[];
     myTracks7: any[];
+    myTracks8: any[];
+    myTracks9: any[];
+    myTracks10: any[];
+    myTracks11: any[];
     allTracks: any[];
     selectedTrack: any;
 
@@ -101,10 +105,48 @@ export class VictorPage {
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
     }
-    
+
     nangiye() {
         this.myTracks7 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nangiye%20Malliye.__Victor%20Rathnayake_mp3[sarigama.lk].mp3',
+            title: 'නන්ගියෙ…. මල්ලියෙ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+
+    //NEW
+    miyuruKalpana() {
+        this.myTracks8 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Miyuru%20Kalpana.__Victor%20Rathnayake_mp3[sarigama.lk].mp3',
+            title: 'නන්ගියෙ…. මල්ලියෙ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    pembaraMadu() {
+        this.myTracks9 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Pembara%20Madu%20Mage__Victor%20Rathnayake_mp3[sarigama.lk].mp3',
+            title: 'නන්ගියෙ…. මල්ලියෙ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    apeRatak() {
+        this.myTracks10 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Koheda%20Koheda%20Ape%20Lowak__Victor%20Rathnayake_mp3[sarigama.lk].mp3',
+            title: 'නන්ගියෙ…. මල්ලියෙ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    sihithaHathak() {
+        this.myTracks11 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sihina%20Sathak__Victor%20Rathnayake_mp3[sarigama.lk].mp3',
             title: 'නන්ගියෙ…. මල්ලියෙ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
