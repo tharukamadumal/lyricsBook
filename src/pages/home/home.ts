@@ -31,6 +31,10 @@ export class HomePage {
     openVictor() {
         this.navCtrl.push('VictorPage');
     }
+	
+	openEdward(){
+		this.navCtrl.push('EdwardPage');
+	}
 
     presentHelp() {
         const alert = this.alertCtrl.create({

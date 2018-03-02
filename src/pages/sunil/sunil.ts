@@ -28,6 +28,7 @@ export class SunilPage {
     myTracks10: any[];
     myTracks11: any[];
     myTracks12: any[];
+    myTracks13: any[];
     allTracks: any[];
     selectedTrack: any;
 
@@ -153,8 +154,18 @@ export class SunilPage {
         }];
     }
     
+    panaMadaKadithi() {
+        this.myTracks13 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Pena%20Madakadithi__Sunil%20Eadirisinghe_mp3[sarigama.lk].mp3',
+            artist: ' පැන මඩ කඩිති',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+    
     ionViewDidLoad() {
         console.log('ionViewDidLoad SunilPage');
     }
 
 }
+

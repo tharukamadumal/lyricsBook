@@ -1,7 +1,7 @@
 <ion-header>
     <ion-navbar>
         <ion-title style="color:white !important;">
-            <ion-icon ios="ios-microphone" md="md-microphone"></ion-icon> <b> <span style="color:white;">සිංහල සිංදු පොත </span></b>
+            <div class="row"><img src="assets/imgs/app_icon.png" height="32px" width="32px"> <b> <span style="color:white; padding-left:10px;">සිංහල සිංදු පොත </span></b></div>
         </ion-title>
         <ion-buttons end>	 	    
             <button ion-button icon-only (click)="presentHelp()" class="btn-end-icons"><ion-icon ios="ios-help-circle" md="md-help-circle"></ion-icon></button>
@@ -42,25 +42,19 @@
                 <img src="assets/imgs/victor.png">
             </ion-avatar>
             <h2 class="artistName">වික්ටර් රත්නායක</h2>
-        </ion-item>
-        <ion-item>
+        </ion-item>  
+        <ion-item (click)="openEdward()">
             <ion-avatar item-start>
-                <img src="assets/imgs/NiroshaVirajini.jpg">
+                <img src="assets/imgs/edward.png">
             </ion-avatar>
-            <h2 class="artistName">නිරෝෂා විරාජිනී</h2>
-        </ion-item> 
+            <h2 class="artistName">එඩ්වඩ් ජයකොඩි</h2>
+        </ion-item> 		
         <ion-item>
             <ion-avatar item-start>
                 <img src="assets/imgs/diwul.png">
             </ion-avatar>
             <h2 class="artistName">කරුණාරත්න දිවුල්ගනගේ</h2>
-        </ion-item> 
-        <ion-item>
-            <ion-avatar item-start>
-                <img src="assets/imgs/edward.png">
-            </ion-avatar>
-            <h2 class="artistName">එඩ්වඩ් ජයකොඩි</h2>
-        </ion-item>     
+        </ion-item>            
         <ion-item>
             <ion-avatar item-start>
                 <img src="assets/imgs/sanath.png">
@@ -72,6 +66,18 @@
                 <img src="assets/imgs/nanda.png">
             </ion-avatar>
             <h2 class="artistName">නන්දා මාලනී</h2>
+        </ion-item> 
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/NiroshaVirajini.jpg">
+            </ion-avatar>
+            <h2 class="artistName">නිරෝෂා විරාජිනී</h2>
+        </ion-item> 
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/kasun.png">
+            </ion-avatar>
+            <h2 class="artistName">කසුන් කල්හාර</h2>
         </ion-item> 
         <ion-item>
             <ion-avatar item-start>

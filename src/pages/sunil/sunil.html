@@ -515,6 +515,43 @@
             <button class="listen" ion-button color="secondary" (click)="kawurunda()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
         </ion-slide>
 
+        <ion-slide style="background-color:">
+            <h2><b> පැන මඩ කඩිති </b> </h2>
+            <p>
+                පැන මඩ කඩිති වැවු තාවුලු වැහි කාලේ<br>
+                පෙන්වා මග නොමග නොවැටී යන තාලේ<br>
+                සිප් කිරි පෙවූ මූසිලයින් උඩු මාලේ<br>
+                අපෙ ගුරුතුමා යයි තාමත් ඉස්කොලේ<br><br>
+
+                සාමා අමර විකුණති බස් පොලේ කජු<br>
+                කුමාරෝද පිටු දන්දෙති එයින් මතු<br>
+                උගත මනා ශිල්පය පිල් කඩ නොපැතූ<br>
+                වේවැල වටා ඉකිබිද දඩුවමක් පැතූ<br><br>
+
+                රන්මසු පට පිලී අභරණ උරණ වෙලා<br>
+                සමන් පිච්ච කැකුලිය ගෙයි මිලින වෙලා<br>
+                ගුරු නිවහනේ කදුලට උල්පතක් වෙලා<br>
+                ලොකු හාමිනේ ඇත බිතු සිතුවමක් වෙලා
+
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks13"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="panaMadaKadithi()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+        </ion-slide>
+
+
     </ion-slides>
 
 </ion-content>
