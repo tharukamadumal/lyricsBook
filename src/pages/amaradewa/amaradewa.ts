@@ -121,7 +121,7 @@ export class AmaradewaPage {
     
     kolomthota() {
         this.myTracks8 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Ma%20Dan%20Mahalu%20Viye__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Kolomthota__W.D.Amaradewa_mp3[sarigama.lk].mp3',
             artist: 'කොළොම්තොට', 
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1

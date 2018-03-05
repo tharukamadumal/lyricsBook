@@ -114,7 +114,7 @@ export class EdwardPage {
     
     miniMini() {
         this.myTracks9 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Dedunu%20Paalama__Edwad%20Jayakodi_mp3[sarigama.lk].mp3',
             artist: 'මිණි මිණි පොද වැටේවි', 
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
@@ -123,7 +123,7 @@ export class EdwardPage {
     
     siriYahane() {
         this.myTracks8 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Siriyahane__Edwad%20Jayakodi_mp3[sarigama.lk].mp3',
             artist: 'සිරියහනේ ලණු ඉහිරී සුසුම් හෙලන රෑ', 
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
@@ -132,7 +132,7 @@ export class EdwardPage {
     
      karadiya() {
         this.myTracks10 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Karadiya%20Gambare__Edwad%20Jayakodi_mp3[www.sarigama.lk].mp3',
             artist: 'කරදිය ගැඹරේ', 
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
