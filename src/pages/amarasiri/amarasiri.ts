@@ -52,7 +52,7 @@ export class AmarasiriPage {
 
     hanthaneta() {
         this.myTracks = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Hanthanata%20Payana%20Sanda__Amarasiri%20Peiris_mp3[www.sarigama.lk].mp3',
             title: 'හන්තානට පායන සඳ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
@@ -61,7 +61,7 @@ export class AmarasiriPage {
 
     magePunchi() {
         this.myTracks2 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Mage%20Punchi%20Rosamale__Amarasiri%20Peiris_mp3[www.sarigama.lk].mp3',
             artist: 'මගේ පුන්චි රෝස මලේ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
@@ -70,7 +70,7 @@ export class AmarasiriPage {
 
     obaApple() {
         this.myTracks3 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Oba%20Apple%20Malak%20Wage__Amarasiri%20Peiris_mp3[sarigama.lk].mp3',
             artist: 'ඔබ ඇපල් මලක් වාගේ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
@@ -79,7 +79,7 @@ export class AmarasiriPage {
 
     landune() {
         this.myTracks4 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Landune__Amarasiri%20Peiris_mp3[sarigama.lk].mp3',
             artist: 'ළඳුනේ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
@@ -89,7 +89,7 @@ export class AmarasiriPage {
 
     malakUne() {
         this.myTracks5 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Malak%20Une%20Eai%20__Amarasiri%20Peiris_mp3[sarigama.lk].mp3',
             artist: 'මලක් උනේ ඇයි',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
@@ -98,7 +98,7 @@ export class AmarasiriPage {
 
     sonduriya() {
         this.myTracks6 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sonduriya%20Kaalaya__Amarasiri%20Peiris_mp3[sarigama.lk].mp3',
             artist: 'සොඳුරිය',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
