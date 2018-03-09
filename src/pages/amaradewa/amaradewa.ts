@@ -1,4 +1,4 @@
-import {Component, Provider} from '@angular/core';
+import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {AudioProvider} from 'ionic-audio';
 /**
@@ -173,10 +173,10 @@ export class AmaradewaPage {
         }]
     }
     
-     weliThala22() {
+     ranwan() {
         this.myTracks14 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Aaradhana__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'ජීවිතයේ තනි මංසල්', 
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Bindu%20Bindu%20Ran__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            artist: 'බිංදු බිංදු රන් ගෝමර මාලා', 
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]

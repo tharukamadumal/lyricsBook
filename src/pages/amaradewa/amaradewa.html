@@ -310,7 +310,7 @@
 
         <ion-slide style="background-color:">
             <h2> <b>   මහවැස්සක පෙර නිමිති පෙනෙනවා  </b></h2>
-            <p class="longLyrics">
+            <p class="longLyrics2">
                 මහවැස්සක පෙර නිමිති පෙනෙනවා.<br>
                 කවුළුව අතරින් හිරිකඩ එනවා.<br>
                 මල් පැණි වඩියක උණුසුම ලබනට.<br>
@@ -320,8 +320,7 @@
 
                 කබාය ඉරිලා ඊට කමක් නෑ.<br>
                 කවුරු බලන්නද කවුරු දකින්නද.<br>
-                මා දැන් මහළු වියේ.<br>
-                මා දැන් මහළු වියේ.<br><br>
+                මා දැන් මහළු වියේ..//<br><br>
 
                 පාරට බැස්සම නොවැසීතල වැඩි<br>
                 තනිකම ඊට වැඩියි.<br>
@@ -332,9 +331,8 @@
 
                 මීවිතකින් ගත උණුසුම් වූවත්<br>
                 සිත උණුසුම් වේදෝ.<br>
-                එපා එපා මීවිත මගෙ දෙතොලට<br>
-                එපා එපා මීවිත මගෙ දෙතොලට<br>
-                ආපසු මගෙ කුටියට යනවා.<br>
+                එපා එපා මීවිත මගෙ දෙතොලට//<br>
+                ආපසු මගෙ කුටියට යනවා.
                 මා ආපසු යනවා.<br><br>
 
                 කබාය ඉරිලා ඊට කමක් නෑ...
@@ -431,7 +429,7 @@
 
         <ion-slide style="background-color:">
             <h2> <b>   වැලිතල අතරේ හෙමිහිට බසිනා </b></h2>
-            <p class="longLyrics">
+            <p class="longLyrics2">
                 වැලිතල අතරේ හෙමිහිට බසිනා<br>
                 නේරංජන නදියේ - ගයා හිස<br>
                 වැඩ සිට බුදුවුණදා...<br>
@@ -509,6 +507,41 @@
                 </audio-track>
             </ion-list> 
             <button class="listen" ion-button color="secondary" (click)="gimanHarina()"><span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span> Listen Online </button>
+        </ion-slide>
+
+        <ion-slide style="background-color:">
+            <h2> <b>   බිංදු බිංදු රන් ගෝමර මාලා  </b></h2>
+            <p>
+                බිංදු බිංදු රන් ගෝමර මාලා<br>
+                බන්දා ගෙල වට ඔමරි ලතාවට<br>
+                කන්දෙන් පාවී...// ලංදට බසිනා<br>
+                රන්වන් රන්වන් මගෙ රන් කිකිළි<br>
+                රන් වන් රන් වන් රන් කිකිළි...//<br><br>
+                හුරු නැති මලක ගොස් උගුලක වැටෙනු එපා<br>
+                කළුවර ගලද්දී තනි මග ඇදෙනු එපා<br>
+                සිරිකත මැවූ සිරි දෙනයන මකනු එපා<br>
+                පිරිවර සොයා මා තනිකර යන්න එපා.....<br><br>
+                කුණ්ඩ සමන් පෙති සුවඳ හලාලා<br>
+                රන් හිරුරැස් කෙදි දෙරණ සිඹින විට<br>
+                මන්දැයි තවමත්..// ලංදට නාවේ<br>
+                රන්වන් රන්වන් මගෙ රන් කිකිළි<br>
+                රන් වන් රන් වන් රන් කිකිළි...//
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks14"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="ranwan()"><span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span> Listen Online </button>
         </ion-slide>
 
 

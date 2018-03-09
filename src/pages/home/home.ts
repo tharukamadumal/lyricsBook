@@ -10,31 +10,47 @@ import {Platform} from 'ionic-angular';
 export class HomePage {
 
     constructor(public navCtrl: NavController, public alertCtrl: AlertController, public platform: Platform) {
-
     }
+    
     openAmaradewa() {
         this.navCtrl.push('AmaradewaPage');
     }
-
     openAmarasiri() {
         this.navCtrl.push('AmarasiriPage');
     }
-
     openSunil() {
         this.navCtrl.push('SunilPage');
     }
-    
     openTM() {
         this.navCtrl.push('TmPage');
     }
-    
     openVictor() {
         this.navCtrl.push('VictorPage');
     }
-	
-	openEdward(){
-		this.navCtrl.push('EdwardPage');
-	}
+    openEdward() {
+        this.navCtrl.push('EdwardPage');
+    }
+    openDiwul() {
+        this.navCtrl.push('DiwulPage');
+    }
+    openSanath(){
+        this.navCtrl.push('SanathPage');
+    }
+    openNanda(){
+        this.navCtrl.push('SanathPage');
+    }
+    openNirosha(){
+        this.navCtrl.push('SanathPage');
+    }
+     openKasun(){
+        this.navCtrl.push('SanathPage');
+    }
+     openChamara(){
+        this.navCtrl.push('SanathPage');
+    }
+    openSashika(){
+        this.navCtrl.push('SanathPage');
+    }
 
     presentHelp() {
         const alert = this.alertCtrl.create({
