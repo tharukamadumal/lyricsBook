@@ -22,6 +22,12 @@ export class DiwulPage {
     myTracks6: any[];
     myTracks7: any[];
     myTracks8: any[];
+    myTracks9: any[];
+    myTracks10: any[];
+    myTracks11: any[];
+    myTracks12: any[];
+    myTracks13: any[];
+    myTracks14: any[];
     allTracks: any[];
     selectedTrack: any;
 
@@ -58,7 +64,7 @@ export class DiwulPage {
 
     bebaleema() {
         this.myTracks2 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Hiruta%20Horen%20%20%20__T.M%20Jayarathna_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Babalema%20Wagema%20Basayama__Karunarathna%20Diwulgane_mp3[www.sarigama.lk].mp3',
             artist: ' බැබලීම වගෙම',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
@@ -105,6 +111,69 @@ export class DiwulPage {
         this.myTracks7 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Aadaraya%20Sundara%20Waradaki__Karunarathne%20Divulgane_mp3[sarigama.lk].mp3',
             artist: ' ආදරය සුන්දර වරදකි',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    duraKathara() {
+        this.myTracks8 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Durukathara%20Gewagena__Karunarathne%20Divulgane_mp3[sarigama.lk].mp3',
+            artist: '  දුර කතර ගෙවාගෙන',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    atheethayaSihinayak() {
+        this.myTracks9 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Athithaya%20Sihinayak__Karunarathne%20Divulgane_mp3[sarigama.lk].mp3',
+            artist: ' අතීතය සිහිනයක් පමනයි',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    maalaGiraviye() {
+        this.myTracks10 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Maala%20Giraviye_Karunarathne%20Divulgane__Karunarathne%20Divulgane_mp3[sarigama.lk].mp3',
+            artist: ' මාල ගිරවියේ මාල ගිරවියේ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    ObaMaaHamuwana() {
+        this.myTracks11 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Oba%20Ma%20Hamuwana__Karunarathne%20Divulgane_mp3[sarigama.lk].mp3',
+            artist: ' ඔබ මා හමුවුන ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    obataWaram() {
+        this.myTracks12 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Obata%20Waran%20Nethi__Karunarathne%20Divulgane_mp3[sarigama.lk].mp3',
+            artist: ' ඔබට වරම් නැති මටද වරම් නැති',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    rosaThol() {
+        this.myTracks13 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Rosa%20Thol%20Simbimi%20Thol%20Matha__Karunarathne%20Divulgane_mp3[sarigama.lk].mp3',
+            artist: ' රෝස තොල් සිඹිමි',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    muduMuhune() {
+        this.myTracks14 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Mudu%20Muhune_Karunarathne%20Divulgane%20V%202__Karunarathne%20Divulgane_mp3[sarigama.lk].mp3',
+            artist: '   මුදු මුහුණේ ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
