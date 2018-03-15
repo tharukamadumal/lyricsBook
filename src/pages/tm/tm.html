@@ -525,5 +525,40 @@
             <button class="listen" ion-button color="secondary" (click)="anduruKutiya()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
         </ion-slide>
 
+        <ion-slide style="background-color:">
+            <h2><b> පවනට සැලෙනා</b> </h2>
+            <p class="longLyrics">
+                පවනට සැලෙනා..දොඹ මල් සුවඳින් <br>  
+                ආදර හසරැලි මුවට නැගෙයිදෝ <br>  
+                සවනට කොඳුරා…    පවසන වදනින්<br>  
+                ආදර හැඟුමන් සිතට දැනෙයිදෝ<br>  <br>  
+
+                මල් ඇතුරුනු ඒ සුව යහනේ ඔබ <br>  
+                අඩවන් දෙනෙතින් ආලවඩයිදෝ <br>  
+                මා ඇකයේ සිට පොඩි පුතු හඬනා <br>  
+                ඒ දුක්බර හඬ ඔබට ඇසෙයිදෝ<br>  <br>  
+
+                ඇකයේ සිට මා පුතු හඬනා සඳ <br>  
+                ලේ කිරි වී දැයි නොදනිමි මා ළඳ <br>  
+                අසරණ දෙනෙතින් පුතු දෙස බැලු සඳ <br>  
+                දුටුවේ වැගිරුනු කඳුළු පමණි ළඳ
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks14"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="pawanataSalena()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+        </ion-slide>
+
     </ion-slides>
 </ion-content>

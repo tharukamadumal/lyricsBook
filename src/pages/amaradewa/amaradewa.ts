@@ -21,7 +21,7 @@ export class AmaradewaPage {
     myTracks3: any[];
     myTracks4: any[];
     myTracks5: any[];
-    myTracks6: any[]; 
+    myTracks6: any[];
     myTracks7: any[];
     myTracks8: any[];
     myTracks9: any[];
@@ -30,6 +30,9 @@ export class AmaradewaPage {
     myTracks12: any[];
     myTracks13: any[];
     myTracks14: any[];
+    myTracks15: any[];
+    myTracks16: any[];
+    myTracks17: any[];
     allTracks: any[];
     selectedTrack: any;
 
@@ -59,7 +62,7 @@ export class AmaradewaPage {
     nimhim() {
         this.myTracks = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nim%20Him%20Sewuwa%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'නිම් හිම් සෙව්වා මා සසරේ', 
+            artist: 'නිම් හිම් සෙව්වා මා සසරේ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
@@ -73,7 +76,7 @@ export class AmaradewaPage {
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
-    
+
     sandaHoren() {
         this.myTracks4 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sanda%20Horen%20%20%20%20%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
@@ -82,7 +85,7 @@ export class AmaradewaPage {
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
-    
+
     mindadaHeesara() {
         this.myTracks2 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Mindada%20Hee%20Sara__W.D.Amaradewa_mp3[sarigama.lk].mp3',
@@ -95,93 +98,120 @@ export class AmaradewaPage {
     aradana() {
         this.myTracks5 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Aaradhana__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'ජීවිතයේ තනි මංසල්', 
+            artist: 'ජීවිතයේ තනි මංසල්',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]
     }
-    
+
     adawan() {
         this.myTracks6 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Adawan%20Wu%20Denethin%20%20[Ok[__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'අඩවන් වූ දෙනෙතින් ගලනා', 
+            artist: 'අඩවන් වූ දෙනෙතින් ගලනා',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]
     }
-    
+
     irahanda() {
         this.myTracks7 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Ira%20Handa%20Paayana%20Loke__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: ' ඉර හඳ පායන ලෝකේ', 
+            artist: ' ඉර හඳ පායන ලෝකේ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]
     }
-    
+
     kolomthota() {
         this.myTracks8 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Kolomthota__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'කොළොම්තොට', 
+            artist: 'කොළොම්තොට',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]
     }
-    
+
     mahaWessaka() {
         this.myTracks9 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Ma%20Dan%20Mahalu%20Viye__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'මහවැස්සක පෙර නිමිති පෙනෙනවා.', 
+            artist: 'මහවැස්සක පෙර නිමිති පෙනෙනවා.',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]
     }
-    
+
     sasaraWasana() {
         this.myTracks10 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sasara%20Wasana%20Thuru__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'සසර වසන තුරු', 
+            artist: 'සසර වසන තුරු',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]
     }
-    
-     shanthaMe() {
+
+    shanthaMe() {
         this.myTracks11 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Shantha%20Me%20Re%20Yaame__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'ශාන්ත මේ රෑ යාමේ', 
+            artist: 'ශාන්ත මේ රෑ යාමේ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]
     }
-    
-     weliThala() {
+
+    weliThala() {
         this.myTracks12 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Weli%20Thala%20Athare_W.D.Amaradewa__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'වැලිතල අතරේ හෙමිහිට බසිනා', 
+            artist: 'වැලිතල අතරේ හෙමිහිට බසිනා',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]
     }
-    
-     gimanHarina() {
+
+    gimanHarina() {
         this.myTracks13 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Giman%20Harina%20Diyaba-Agni__W%20D%20Amaradewa_mp3[www.sarigama.lk].mp3',
-            artist: 'ගිමන් හරින දියඹ දිගේ', 
+            artist: 'ගිමන් හරින දියඹ දිගේ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]
     }
-    
-     ranwan() {
+
+    ranwan() {
         this.myTracks14 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Bindu%20Bindu%20Ran__W.D.Amaradewa_mp3[sarigama.lk].mp3',
-            artist: 'බිංදු බිංදු රන් ගෝමර මාලා', 
+            artist: 'බිංදු බිංදු රන් ගෝමර මාලා',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
+        }]
+    }
+
+    kumariyaka() {
+        this.myTracks15 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Kumariyaka%20Pa%20Salamba%20__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            artist: ' කුමරියක පා සළඹ සැලුනා..',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]
     }
     
+    thaththaUnath() {
+        this.myTracks16 = [{
+            src: 'http://topbadu.net/sinhala_mp3/WD_Amaradewa_Thaththa_Unath.mp3',
+            artist: 'තාත්තා වුනත් මා බත සරිකරන....',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
+        }]
+    }
+    
+     saraswathiDewi() {
+        this.myTracks17 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Jagan%20Mohinee__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            artist: 'ජගන් මෝහිනී මධුර',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
+        }]
+    }
+
 
     ionViewDidLoad() {
         console.log('ionViewDidLoad AmaradewaPage');

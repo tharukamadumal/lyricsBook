@@ -2,7 +2,6 @@ import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {AudioProvider} from 'ionic-audio';
 
-
 /**
  * Generated class for the SanathPage page.
  *
@@ -48,37 +47,37 @@ export class SanathPage {
         console.log('Track finished', track)
     }
 
-    sulangaNumba() {
+    aathaEpita() {
         this.myTracks = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sulanga%20Numba%20Wage%20%20%20%20__Karunarathne%20Divulgane_mp3[sarigama.lk].mp3',
-            artist: ' සුළඟ නුඹ වගෙයි',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Eatha%20Epita%20%20__Sanath%20Nandasiri_mp3[sarigama.lk].mp3',
+            artist: ' ඈත එපිට',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
     }
 
-    sulangaNumba1() {
+    nirwanaSwarna() {
         this.myTracks2 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sulanga%20Numba%20Wage%20%20%20%20__Karunarathne%20Divulgane_mp3[sarigama.lk].mp3',
-            artist: ' සුළඟ නුඹ වගෙයි',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Nirwana%20Swarna-Sambodi%20Raja%20__Sanath%20Nandasiri_mp3[www.sarigama.lk].mp3',
+            artist: 'නිර්වාණ ස්වර්ණ ද්වාරයෙන්',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
     }
 
-    sulangaNumba11() {
-        this.myTracks = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sulanga%20Numba%20Wage%20%20%20%20__Karunarathne%20Divulgane_mp3[sarigama.lk].mp3',
-            artist: ' සුළඟ නුඹ වගෙයි',
-            art: 'assets/imgs/play.png',
-            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
-        }];
-    }
-
-    sulangaNumba111() {
+    sendeKaluwara() {
         this.myTracks3 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sulanga%20Numba%20Wage%20%20%20%20__Karunarathne%20Divulgane_mp3[sarigama.lk].mp3',
             artist: ' සුළඟ නුඹ වගෙයි',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    sahasakPathuman() {
+        this.myTracks4 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sahasak%20Pethumal__Sanath%20Nandasiri_mp3[sarigama.lk].mp3',
+            artist: 'සහසක් පැතුමන් නැත',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];

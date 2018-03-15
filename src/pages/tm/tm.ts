@@ -29,6 +29,7 @@ export class TmPage {
     myTracks11: any[];
     myTracks12: any[];
     myTracks13: any[];
+    myTracks14: any[];
     allTracks: any[];
     selectedTrack: any;
 
@@ -56,7 +57,7 @@ export class TmPage {
 
     sonduruAtheethaya() {
         this.myTracks = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Hiruta%20Horen%20%20%20__T.M%20Jayarathna_mp3[sarigama.lk].mp3',
+            src: 'http://topbadu.net/sinhala_mp3/TM_Jayarathna_Sonduru_Atheethaye.mp3',
             artist: 'සොඳුරු අතීතයෙ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
@@ -105,7 +106,7 @@ export class TmPage {
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
     }
-    
+
     raththaran() {
         this.myTracks7 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Raththaran%20Neth%20Dekin__T.M%20Jayarathna_mp3[sarigama.lk].mp3',
@@ -157,13 +158,22 @@ export class TmPage {
             artist: 'ඔබ හා මෙමා',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
-        }];        
+        }];
     }
-    
+
     anduruKutiya() {
         this.myTracks13 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Anduru%20Kutiya__T.M%20Jayarathna_mp3[sarigama.lk].mp3',
             artist: 'අඳුරු කුටිය තුල',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }];
+    }
+
+    pawanataSalena() {
+        this.myTracks14 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Pawanata%20Selena%20[%20Lama%20]__Nathasha%20Perera_mp3[sarigama.lk].mp3',
+            artist: ' පවනට සැලෙනා',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
