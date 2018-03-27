@@ -33,6 +33,7 @@ export class AmaradewaPage {
     myTracks15: any[];
     myTracks16: any[];
     myTracks17: any[];
+    myTracks18: any[];
     allTracks: any[];
     selectedTrack: any;
 
@@ -193,7 +194,7 @@ export class AmaradewaPage {
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]
     }
-    
+
     thaththaUnath() {
         this.myTracks16 = [{
             src: 'http://topbadu.net/sinhala_mp3/WD_Amaradewa_Thaththa_Unath.mp3',
@@ -202,8 +203,8 @@ export class AmaradewaPage {
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
         }]
     }
-    
-     saraswathiDewi() {
+
+    saraswathiDewi() {
         this.myTracks17 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Jagan%20Mohinee__W.D.Amaradewa_mp3[sarigama.lk].mp3',
             artist: 'ජගන් මෝහිනී මධුර',
@@ -212,6 +213,14 @@ export class AmaradewaPage {
         }]
     }
 
+    wakkadaLanga() {
+        this.myTracks18 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Wakkada%20Langa_W.D.Amaradewa%20V%201__W.D.Amaradewa_mp3[sarigama.lk].mp3',
+            artist: 'වක්කඩ ලඟ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off 1
+        }]
+    }
 
     ionViewDidLoad() {
         console.log('ionViewDidLoad AmaradewaPage');

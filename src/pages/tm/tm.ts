@@ -172,13 +172,12 @@ export class TmPage {
 
     pawanataSalena() {
         this.myTracks14 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Pawanata%20Selena%20[%20Lama%20]__Nathasha%20Perera_mp3[sarigama.lk].mp3',
+            src: 'http://topbadu.net/sinhala_mp3/TM_Jayarathna_Pawanata_Salena.mp3',
             artist: ' පවනට සැලෙනා',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }];
     }
-
 
     ionViewDidLoad() {
         console.log('ionViewDidLoad TmPage');

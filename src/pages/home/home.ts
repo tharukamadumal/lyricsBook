@@ -37,10 +37,10 @@ export class HomePage {
         this.navCtrl.push('SanathPage');
     }
     openNanda(){
-        this.navCtrl.push('SanathPage');
+        this.navCtrl.push('NandaPage');
     }
     openNirosha(){
-        this.navCtrl.push('SanathPage');
+        this.navCtrl.push('NiroshaPage');
     }
      openKasun(){
         this.navCtrl.push('SanathPage');
