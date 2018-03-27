@@ -43,13 +43,16 @@ export class HomePage {
         this.navCtrl.push('NiroshaPage');
     }
      openKasun(){
-        this.navCtrl.push('SanathPage');
+        this.navCtrl.push('KasunPage');
     }
      openChamara(){
-        this.navCtrl.push('SanathPage');
+        this.navCtrl.push('ChamaraPage');
+    }
+     openChandana(){
+        this.navCtrl.push('ChandanaPage');
     }
     openSashika(){
-        this.navCtrl.push('SanathPage');
+        this.navCtrl.push('ShashikaPage');
     }
 
     presentHelp() {

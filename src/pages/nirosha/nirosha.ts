@@ -46,10 +46,46 @@ export class NiroshaPage {
         console.log('Track finished', track)
     }
 
-    mageSanda() {
+    punSanda() {
         this.myTracks = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Mage%20Sanda%20Oba_Nanda%20Malani__Nanda%20Malani_mp3[sarigama.lk].mp3',
-            artist: 'මගේ සඳ ඔබ',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Punsanda%20Reta%20__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
+            artist: ' පුන් සඳ රෑට ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+     sandaThaniyama() {
+        this.myTracks2 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sanda%20Thaniyama%20%20%20__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
+            artist: ' සඳ තනියම',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+     duhulMalaka() {
+        this.myTracks3 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Duhul%20Malaka%20Mal%20Petthaka-%20Live__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
+            artist: '  දුහුල් මලක මල් පෙත්තක',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+     dunnuWedana() {
+        this.myTracks4 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Dunnu%20Wedana__Nirosha%20Virijini_mp3[www.sarigama.lk].mp3',
+            artist: ' දුන්නු වේදනා',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+     rangiraMaa() {
+        this.myTracks5 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Ran%20Gira%20Maa%20__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
+            artist: '   රන් ගිර මා ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]

@@ -73,7 +73,7 @@ export class NandaPage {
 
     ammaWarune() {
         this.myTracks4 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Tharuda%20Nidana%20Maha%20Re%20%20__Nanda%20Malani_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Amma%20Warune__Nanda%20Malani_mp3[sarigama.lk].mp3',
             artist: ' අම්මාවරුනේ…',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
@@ -82,7 +82,7 @@ export class NandaPage {
 
     tharudaNidana() {
         this.myTracks5 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Amma%20Warune__Nanda%20Malani_mp3[sarigama.lk].mp3',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Tharuda%20Nidana%20Maha%20Re%20%20__Nanda%20Malani_mp3[sarigama.lk].mp3',
             artist: ' තරුද නිදන මහ රෑ...',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
