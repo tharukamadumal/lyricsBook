@@ -48,10 +48,16 @@ export class HomePage {
      openChamara(){
         this.navCtrl.push('ChamaraPage');
     }
+     openSamitha(){
+        this.navCtrl.push('ChamaraPage');
+    }
      openChandana(){
         this.navCtrl.push('ChandanaPage');
     }
     openSashika(){
+        this.navCtrl.push('ShashikaPage');
+    }
+    openAsanka(){
         this.navCtrl.push('ShashikaPage');
     }
 
