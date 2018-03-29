@@ -20,6 +20,7 @@ export class KasunPage {
     myTracks4: any[];
     myTracks5: any[];
     myTracks6: any[];
+    myTracks7: any[];
     allTracks: any[];
     selectedTrack: any;
 
@@ -44,10 +45,64 @@ export class KasunPage {
         console.log('Track finished', track)
     }
 
-    punSanda() {
+    adaraMal() {
         this.myTracks = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Punsanda%20Reta%20__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
-            artist: ' පුන් සඳ රෑට ',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Aadara%20Malwala__Kasun%20Kalhara_mp3[sarigama.lk].mp3',
+            artist: 'ආදර මල් වල පාට ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+     ananthayata() {
+        this.myTracks2 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Ananthayata%20Yana%20Paara%20Dige%20%20__Kasun%20Kalhara_mp3[sarigama.lk].mp3',
+            artist: ' අනන්තයට යන ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+     ekaWasanthayaka() {
+        this.myTracks3 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Eka%20Wasanthayaka__Kasun%20Kalhara_mp3[sarigama.lk].mp3',
+            artist: 'එක වසන්තයක ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+     malMitak() {
+        this.myTracks4 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Mal%20Mitak_Kasun%20Kalhara__Kasun%20Kalhara_mp3[sarigama.lk].mp3',
+            artist: '   මල් මිටක් තියන්න ඔබ අතේ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+     kawulupiyan() {
+        this.myTracks5 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Kawulu%20Piyanpath%20Wahanna__Kasun%20Kalhara_mp3[sarigama.lk].mp3',
+            artist: 'කවුලු පියන්පත් වහන්න ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+     igilenna() {
+        this.myTracks6 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sanda%20Mithuri%20-%20Egilenna%20Oba%20Ekka__Kasun%20Kalhara_mp3[www.sarigama.lk].mp3',
+            artist: 'ඉගිලෙන්න ඔබ එක්ක ආකාසේ ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    walakulak() {
+        this.myTracks7 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Walakulak%20We%20__Kasun%20Kalhara_mp3[sarigama.lk].mp3',
+            artist: ' වලා කුලක් වී නිල් අහසේ ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]

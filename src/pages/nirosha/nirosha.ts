@@ -29,6 +29,7 @@ export class NiroshaPage {
     myTracks11: any[];
     myTracks12: any[];
     myTracks13: any[];
+    myTracks14: any[];
     allTracks: any[];
     selectedTrack: any;
 
@@ -99,7 +100,7 @@ export class NiroshaPage {
     }
 
     sandaDiya() {
-        this.myTracks5 = [{
+        this.myTracks6 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sanda%20Diya%20Uthura__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
             artist: ' සද දිය උතුරා අපතේ යයි ',
             art: 'assets/imgs/play.png',
@@ -108,7 +109,7 @@ export class NiroshaPage {
     }
 
     sinaThotak() {
-        this.myTracks6 = [{
+        this.myTracks7 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sina%20Thotak__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
             artist: 'සිනාතොටක් විය ඔබ',
             art: 'assets/imgs/play.png',
@@ -117,7 +118,7 @@ export class NiroshaPage {
     }
 
     sithaHandai() {
-        this.myTracks7 = [{
+        this.myTracks8 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sitha%20Handai__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
             artist: '  සිත හඩයි...',
             art: 'assets/imgs/play.png',
@@ -126,7 +127,7 @@ export class NiroshaPage {
     }
 
     suduAth() {
-        this.myTracks8 = [{
+        this.myTracks9 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sudu%20Eath%20Powuwek__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
             artist: '  සුදු ඇත් පොව්වෙක ',
             art: 'assets/imgs/play.png',
@@ -135,7 +136,7 @@ export class NiroshaPage {
     }
 
     sigiriGeeyak() {
-        this.myTracks9 = [{
+        this.myTracks10 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Seegiri%20Geeyak__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
             artist: ' සීගිරි ගීයක් ඔබේ ',
             art: 'assets/imgs/play.png',
@@ -144,7 +145,7 @@ export class NiroshaPage {
     }
 
     reeDolos() {
-        this.myTracks10 = [{
+        this.myTracks12 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Re%20Dolos%20Peye%20%20__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
             artist: '  රෑ දොලොස් පැයේ ',
             art: 'assets/imgs/play.png',
@@ -161,19 +162,10 @@ export class NiroshaPage {
         }]
     }
 
-    reeDoaalos() {
-        this.myTracks12 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Re%20Dolos%20Peye%20%20__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
-            artist: '  රෑ දොලොස් පැයේ ',
-            art: 'assets/imgs/play.png',
-            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
-        }]
-    }
-
     manKirilliyak() {
         this.myTracks13 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Man%20Kirilliyak%20__Nirosha%20Virajini_mp3[sarigama.lk].mp3',
-            artist: ' මංමේ මං ',
+            artist: 'මං කිරිල්ලියක් ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
