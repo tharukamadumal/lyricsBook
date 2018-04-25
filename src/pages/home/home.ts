@@ -58,7 +58,10 @@ export class HomePage {
         this.navCtrl.push('ShashikaPage');
     }
     openAsanka(){
-        this.navCtrl.push('ShashikaPage');
+        this.navCtrl.push('AsankaPage');
+    }
+    openAthula(){
+        this.navCtrl.push('AthulaPage');
     }
 
     presentHelp() {
