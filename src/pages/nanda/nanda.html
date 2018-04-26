@@ -244,5 +244,81 @@
             <button class="listen" ion-button color="secondary" (click)="raththaranDuwe()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
         </ion-slide>
 
+        <ion-slide style="background-color:">
+            <h2><b>   සැඳෑ කළුවර</b> </h2>
+            <p>
+                සැඳෑ කළුවර කුරගගා විත්<br>
+                ඔබේ පැල්පත මගේ දසුනින්<br>
+                ඈත්වූ සඳ මගෙ සරා සඳ<br>
+                තනිවෙලා මා තනිවෙලා..<br><br>
+
+                වළාකුලකුදු නොමැති අහසේ<br>
+                මලානික වුනු මගේ සිතුවිලි<br>
+                ගල් ගැසී ඇත පාළු වී ඇත<br>
+                අඳුර පමණක් රජ වෙලා..<br><br>
+
+                සැඳෑකළුවර....<br><br>
+
+                ඔබේ ලෝකය මගේ ලෝකය<br>
+                අතර ඇත්තේ රුයක් පමණයි<br>
+                ගව්ගණන් දුර ජීවිතේ බර<br>
+                මගේ හිසමත බර වෙලා..<br><br>
+
+                සැඳෑ කළුවර....
+
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks7"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="sandaKaluwara()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+        </ion-slide>
+
+        <ion-slide style="background-color:">
+            <h2><b>   මලට රේණු සේ</b> </h2>
+            <p>
+                මලට රේණු සේ ඔබ ළඟ ඉන්නම්…<br>
+                සඳට තරුව සේ තනිය මකන්නම්…<br>
+                නෙතට කඳුළ සේ නෙත ළඟ ඉන්නම්…<br>
+                මියෙන තුරා ආදරෙයි කියන්නම්…<br><br>
+
+                සිනා පිරුණු මුව නිරන්තරේ පෙනේවි නම්…<br>
+                ආල කතන්දර හොර රහසේ කියාවි නම්…<br>
+                ඔබේ තුරුල්ලේ උණුසුම් සුව ලැබේවි නම්…<br>
+                මියෙන තුරා ආදරෙයි කියන්නම්…<br><br>
+
+                පාළුව මකනා කවියක් සේ ඇසේවි නම්…<br>
+                මා සවනේ රැව් දිදී රැ‍ඳී ඉඳීවි නම්…<br>
+                ඔබ කිසිදා මා හිත නොතලා රැ‍ඳේවි නම්…<br>
+                මියෙනතුරා ආදරෙයි කියන්නම්…
+
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks8"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="malataRenu()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+        </ion-slide>
+
     </ion-slides>
 </ion-content>

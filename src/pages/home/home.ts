@@ -12,6 +12,9 @@ export class HomePage {
     constructor(public navCtrl: NavController, public alertCtrl: AlertController, public platform: Platform) {
     }
     
+    openGroup() {
+        this.navCtrl.push('GroupPage');
+    }
     openAmaradewa() {
         this.navCtrl.push('AmaradewaPage');
     }

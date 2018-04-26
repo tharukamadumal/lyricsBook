@@ -1,9 +1,8 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {AudioProvider} from 'ionic-audio';
-
 /**
- * Generated class for the NandaPage page.
+ * Generated class for the GroupPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,19 @@ import {AudioProvider} from 'ionic-audio';
 
 @IonicPage()
 @Component({
-    selector: 'page-nanda',
-    templateUrl: 'nanda.html',
+    selector: 'page-group',
+    templateUrl: 'group.html',
 })
-export class NandaPage {
+export class GroupPage {
     myTracks: any[];
     myTracks2: any[];
     myTracks3: any[];
     myTracks4: any[];
     myTracks5: any[];
     myTracks6: any[];
-    myTracks7: any[];
-    myTracks8: any[];
     allTracks: any[];
     selectedTrack: any;
+
     constructor(public navCtrl: NavController, public navParams: NavParams, private _audioProvider: AudioProvider) {
     }
 
@@ -47,79 +45,62 @@ export class NandaPage {
         console.log('Track finished', track)
     }
 
-    mageSanda() {
+    ekaYaye() {
         this.myTracks = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Mage%20Sanda%20Oba_Nanda%20Malani__Nanda%20Malani_mp3[sarigama.lk].mp3',
-            artist: 'මගේ සඳ ඔබ',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Eka%20Yaye%20[%20Mangala%20Thegga%20]__Sunil%20Eadirisinghe%20And%20Edward_mp3[sarigama.lk].mp3',
+            artist: ' එක යායේ කකා වැටී - සුනිල් එදිරිසිංහ, එඩ්වඩ් ජයකොඩි  ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
 
-    mihiMadale() {
+    rahaseHandana() {
         this.myTracks2 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Mihimadale%20Anduru%20Kuse__Nanda%20Malani_mp3[sarigama.lk].mp3',
-            artist: 'මිහි මඬලේ අඳුරු කුසේ',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Rahase%20Handana_Clarance%20Wijewardana__Clarance%20Wijewardana_mp3[sarigama.lk].mp3',
+            artist: 'රහසේ හඬනා - නීලා වික්රමසිංහ / ක්ලැරන්ස් විජේවර්ධන  ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
-    pipunuMale() {
+
+    kawrundaKawuluwa() {
         this.myTracks3 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Pipunu%20Male%20Ruwa__Nanda%20Malani_mp3[sarigama.lk].mp3',
-            artist: ' පිපුණු මලේ රුව',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Kawurunda%20Kawuluwa%20Wahuwe__Chamara%20and%20Shashika_mp3[www.sarigama.lk].mp3',
+            artist: ' කවුරුන්ද කවුලුව වැහුවේ - චාමර වීරසිංහ, ශෂිකා නිසංසලා  ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
 
-    ammaWarune() {
+    hanthanaSihine() {
         this.myTracks4 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Amma%20Warune__Nanda%20Malani_mp3[sarigama.lk].mp3',
-            artist: ' අම්මාවරුනේ…',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Hanthana%20Sihine-Bala%20Walapemi__W.D.Amaradewa%20and%20Umariya_mp3[www.sarigama.lk].mp3',
+            artist: 'බලා වැලපෙමි - ඩබ්.ඩී අමරදේව, උමාරියා  ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
 
-    tharudaNidana() {
+    heminSere() {
         this.myTracks5 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Tharuda%20Nidana%20Maha%20Re%20%20__Nanda%20Malani_mp3[sarigama.lk].mp3',
-            artist: ' තරුද නිදන මහ රෑ...',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Hemin%20Sere%20Piya%20Wida__T.M.Jayarathna_mp3[sarigama.lk].mp3',
+            artist: ' හෙමින් සැරේ - ටී.එම්.ජයරත්න, සුනිලා අබේසේකර  ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
-
-    raththaranDuwe() {
+    
+    sihinayakiMata() {
         this.myTracks6 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Raththaran%20Duwe_Nanda%20Malani__Nanda%20Malani_mp3[sarigama.lk].mp3',
-            artist: '  රත්තරන් දුවේ',
-            art: 'assets/imgs/play.png',
-            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
-        }]
-    }
-    
-    sandaKaluwara() {
-        this.myTracks7 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sende%20Kaluwara__Nanda%20Malani_mp3[sarigama.lk].mp3',
-            artist: '  සැඳෑ කළුවර',
-            art: 'assets/imgs/play.png',
-            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
-        }]
-    }
-    
-    malataRenu() {
-        this.myTracks8 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Malata%20Renu%20Se__Nanda%20Malani_mp3[sarigama.lk].mp3',
-            artist: ' මලට රේණු සේ',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Aadaraneeya%20Wassanaya%20%20%20%20__Kasun%20Kalhara_mp3[sarigama.lk].mp3',
+            artist: 'සිහිනයකි මට ආදරේ - කසුන් කල්හාර, උරේෂා රවිහාරි  ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
 
     ionViewDidLoad() {
-        console.log('ionViewDidLoad NandaPage');
+        console.log('ionViewDidLoad GroupPage');
     }
 
 }
