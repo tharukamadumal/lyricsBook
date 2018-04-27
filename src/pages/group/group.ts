@@ -20,6 +20,10 @@ export class GroupPage {
     myTracks4: any[];
     myTracks5: any[];
     myTracks6: any[];
+    myTracks7: any[];
+    myTracks8: any[];
+    myTracks9: any[];
+    myTracks10: any[];
     allTracks: any[];
     selectedTrack: any;
 
@@ -89,11 +93,47 @@ export class GroupPage {
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
-    
+
     sihinayakiMata() {
         this.myTracks6 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Aadaraneeya%20Wassanaya%20%20%20%20__Kasun%20Kalhara_mp3[sarigama.lk].mp3',
             artist: 'සිහිනයකි මට ආදරේ - කසුන් කල්හාර, උරේෂා රවිහාරි  ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+
+    daiwayeSaradamin() {
+        this.myTracks7 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Daiwaye%20Saradamin__Athula%20and%20Samitha_mp3[www.sarigama.lk].mp3',
+            artist: ' දෛවයේ සරදමින් - අතුල අධිකාරි , සමිතා  මුදුන්කොටුව ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+
+    handapanak() {
+        this.myTracks8 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Handa%20Panak__Athula%20Adikari_mp3[sarigama.lk].mp3',
+            artist: '  හඳපානක් සේ -  අතුල අධිකාරි , සමිතා  මුදුන්කොටුව ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+
+    tharukaPelin() {
+        this.myTracks9 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Tharuka%20Pelin%20Eha_Athula%20Adikari__Athula%20Adikari_mp3[sarigama.lk].mp3',
+            artist: '  තාරුකා පෙලින් එහා -  අතුල අධිකාරි , සමිතා  මුදුන්කොටුව ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+
+    sandaTharu() {
+        this.myTracks10 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sanda%20Tharu%20Mal_Athula%20Adikari__Athula%20Adikari_mp3[sarigama.lk].mp3',
+            artist: ' සඳ තරු මල් මට-  අතුල අධිකාරි , සමිතා  මුදුන්කොටුව ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
