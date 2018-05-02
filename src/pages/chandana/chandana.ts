@@ -50,15 +50,51 @@ export class ChandanaPage {
         console.log('Track finished', track)
     }
 
-    ekaYaye() {
+    EhalaMal() {
         this.myTracks = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Eka%20Yaye%20[%20Mangala%20Thegga%20]__Sunil%20Eadirisinghe%20And%20Edward_mp3[sarigama.lk].mp3',
-            artist: ' එක යායේ කකා වැටී - සුනිල් එදිරිසිංහ, එඩ්වඩ් ජයකොඩි  ',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Ehela%20Mal%20Pipena%20%20__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
+            artist: '  ඇහල මල් ‍පිපෙනා ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
 
+    premayaLowa() {
+        this.myTracks2 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Premaya%20Lowa%20__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
+            artist: '  ප්‍රේමය ලොව   ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    muthuMaala() {
+        this.myTracks3 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Muthumala%20Hatha%20%20__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
+            artist: ' මුතු මාල',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    suwandaThiya() {
+        this.myTracks4 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Suwanda%20Thiya%20%20__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
+            artist: '   සුවඳ තියා  ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    kawiSipada() {
+        this.myTracks5 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Kavi%20Seepada%20%20__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
+            artist: 'කවි සීපද ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
     ionViewDidLoad() {
         console.log('ionViewDidLoad ChandanaPage');
     }
