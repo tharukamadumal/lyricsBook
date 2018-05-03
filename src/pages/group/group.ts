@@ -24,6 +24,7 @@ export class GroupPage {
     myTracks8: any[];
     myTracks9: any[];
     myTracks10: any[];
+    myTracks11: any[];
     allTracks: any[];
     selectedTrack: any;
 
@@ -134,6 +135,15 @@ export class GroupPage {
         this.myTracks10 = [{
             src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sanda%20Tharu%20Mal_Athula%20Adikari__Athula%20Adikari_mp3[sarigama.lk].mp3',
             artist: ' සඳ තරු මල් මට-  අතුල අධිකාරි , සමිතා  මුදුන්කොටුව ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    obaMageWela() {
+        this.myTracks11 = [{
+            src: 'http://topbadu.net/sinhala_mp3/Oba_Mage_Wela_Dehadak_Adaren_Theme_Song.mp3',
+            artist: ' ඔබ මගේ වෙලා-  මංගල , කුෂාණි',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]

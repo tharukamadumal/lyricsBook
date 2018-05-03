@@ -95,6 +95,33 @@ export class ChandanaPage {
         }]
     }
     
+    sandaYathra() {
+        this.myTracks6 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sanda%20Yaathra%20Kala%20__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
+            artist: '  සඳ යාත්‍රා කලා ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    pamaaWedie() {
+        this.myTracks7 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Pama%20Weddi__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
+            artist: ' පමා වැඩියි ඔබ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    mageAdare() {
+        this.myTracks8 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Mage%20Adare%20Tharam__Chandana%20Liyanarachchi_mp3[www.sarigama.lk].mp3',
+            artist: '  මගෙ ආදරේ තරම්',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
     ionViewDidLoad() {
         console.log('ionViewDidLoad ChandanaPage');
     }
