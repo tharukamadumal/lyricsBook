@@ -711,5 +711,52 @@
             <button class="listen" ion-button color="secondary" (click)="wakkadaLanga()"><span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span> Listen Online </button>
         </ion-slide>
 
+        <ion-slide style="background-color:">
+            <h2> <b>සන්නාලියනේ</b></h2>
+            <p class="longLyrics2">
+
+                සන්නාලියනේ සන්නාලියනේ <br>
+                මේ හිමිදිරි උදයේ<br>
+                සන්තෝසෙන් ඔබ හිනැහී හිනැහී<br>
+                කාටද ඇදුම වියන්නේ…..<br>
+                මාලගිරා තටු සේම රුවින් යුතු<br>
+                නිල්වන් ඇදුම වියන්නේ කාටද ඇදුම වියන්නේ…<br><br>
+
+                මාලගිරා තටු සේම රුවින් යුතු නිල්වන් ඇදුම වියන්නේ…<br>
+                ඊයේ ඉපදුනු කුළුඳුල් දූටයි මේ පොඩි ඇඳුම වියන්නේ…..<br>
+                සන්නාලියනේ සන්නාලියනේ මේ හැන්දෑ යාමේ<br>
+                හැඩ වැඩ දමලා ලස්සන කරලා කාටද ඇදුම වියන්නේ<br>
+                සැන්දෑ අහසේ රන්වන් පාටින් දිලිසෙන ඇදුම වියන්නේ කාටද ඇදුම වියන්නේ<br><br>
+
+                සැන්දෑ අහසේ රන්වන් පාටින් දිලිසෙන ඇදුම වියන්නේ<br>
+                ඒ කුළුඳුල් දූ දීගෙක දෙන්නයි මංගල ඇඳුම වියන්නේ<br><br>
+
+                සන්නාලියනේ සන්නාලියනේ සීතල හඳ එලියේ<br>
+                මැලවුනු මුහුනින් වෙව්ලන දෑතින්<br>
+                කාටද සළුව වියන්නේ සීතල සළුව වියන්නේ<br>
+                කණකොක් තටුවේ සුදුමැලි පාටින්<br>
+                සීතල සළුව වියන්නේ කාටද සළුව වියන්නේ<br><br>
+
+                කණකොක් තටුවේ සුදුමැලි පාටින් සීතල සළුව වියන්නේ<br>
+                මියගිය ඇයගේ මිනිය වහන්නයි සීතල සළුව වියන්නේ
+
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks19"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="sannaliyane()"><span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span> Listen Online </button>
+        </ion-slide>
+
     </ion-slides>
 </ion-content>

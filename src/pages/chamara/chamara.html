@@ -534,5 +534,46 @@
 
         </ion-slide>
 
+        <ion-slide style="background-color:">
+            <h2><b>  කන්දෙ හැපිල හද  </b> </h2>
+            <p>
+                 කන්දෙ හැපිල හද මුලා කල නෙත
+                 යමුද නගේ අද කන්දෙ විහාරෙට<br>
+                යමුද නගේ අද කන්දෙ විහාරෙට<br><br>
+                
+                කන්දෙ හැපිල හද.. <br><br>
+
+ පිච්ච මල් කැකුලු අරගෙන එපා සිඹින්නට<br>
+ පරවුන මල් දැක එපා හඩන්නට<br>
+ දිව හැකිල්ලෙන්නේ නැතුව කියාපන් නගෝ<br>
+ මා එක්කම දීග කන්න එනවද නංගෝ<br><br>
+
+ කන්දෙ හැපිල හද..<br><br>
+
+ සේද හවඩි පලදාගෙන කැන්දන් යන්නට<br>
+ බාර උනේ මං කන්දෙ විහාරෙට<br>
+ දිවුරල බෝ මලුවෙදි මට කියාපන් නගෝ<br>
+ තව උඹ ගැන හිතෙ තියන් ඉන්නද නංගෝ<br><br>
+
+ කන්දෙ හැපිල හද.. //
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks14"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="kandeHapila()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+
+        </ion-slide>
+
     </ion-slides>
 </ion-content>

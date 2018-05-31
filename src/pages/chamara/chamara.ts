@@ -27,6 +27,7 @@ export class ChamaraPage {
     myTracks11: any[];
     myTracks12: any[];
     myTracks13: any[];
+    myTracks14: any[];
     allTracks: any[];
     selectedTrack: any;
 
@@ -164,6 +165,15 @@ export class ChamaraPage {
         this.myTracks13 = [{
             src: 'http://s1.jayasrilanka.info/albums/Chamara-Weerasinghe/Napuru%20Wenna%20Epa%20Kiyala%20(Ma%20Adara%20Amma)%20-%20Chamara%20Weerasinghe.mp3',
             artist: ' නපුරු වෙන්න එපා කියලා',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+
+     kandeHapila() {
+        this.myTracks14 = [{
+            src: 'http://slmobi.com/files/Songs%20By%20Artist/Chamara%20Weerasinghe/Kande%20Hepila%20Handa%20-%20Chamara%20Weerasinghe.mp3',
+            artist: ' කන්දෙ හැපිල හද',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]

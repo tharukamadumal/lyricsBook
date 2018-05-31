@@ -47,10 +47,64 @@ export class AthulaPage {
         console.log('Track finished', track)
     }
 
-    adaraMal() {
+    hadaHandala() {
         this.myTracks = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Aadara%20Malwala__Kasun%20Kalhara_mp3[sarigama.lk].mp3',
-            artist: 'ආදර මල් වල පාට ',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Hada%20Handala__Athula%20Adikari_mp3[sarigama.lk].mp3',
+            artist: ' හද හඬලා  ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    visirunuMal() {
+        this.myTracks2 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Visirunu%20Mal%20Pethi%20__Athula%20Adikari_mp3[sarigama.lk].mp3',
+            artist: '  විසිරුනු මල් පෙති',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    hithaAssata() {
+        this.myTracks3 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Hitha%20Assata%20Heena%20Godak__Athula%20Adhikari_mp3[www.sarigama.lk].mp3',
+            artist: '  හිත අස්සට ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    mageKiya() {
+        this.myTracks4 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Mage%20Kiya%20Athwela__Athula%20Adhikari_mp3[www.sarigama.lk].mp3',
+            artist: 'මගේ කියා  ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    wedikaweJiwithe() {
+        this.myTracks5 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Me%20Wedikawa%20__Athula%20Adikari_mp3[sarigama.lk].mp3',
+            artist: ' අපිට සිංදුවක් ලියන්න ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    pinnaPipena() {
+        this.myTracks6 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Pinna%20Pipena__Athula%20Adikari_mp3[sarigama.lk].mp3',
+            artist: ' පින්න පිපෙන ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+    
+    sililara() {
+        this.myTracks7 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Soorya%20Nagare%20%20%20__Athula%20Adikari_mp3[sarigama.lk].mp3',
+            artist: '  සිලිලාර සිත ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
