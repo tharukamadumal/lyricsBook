@@ -52,7 +52,7 @@ export class HomePage {
         this.navCtrl.push('ChamaraPage');
     }
      openSamitha(){
-        this.navCtrl.push('ChamaraPage');
+        this.navCtrl.push('SamithaPage');
     }
      openChandana(){
         this.navCtrl.push('ChandanaPage');

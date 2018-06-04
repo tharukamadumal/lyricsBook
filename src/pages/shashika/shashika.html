@@ -14,5 +14,49 @@
 
 
 <ion-content padding>
+ <ion-slides pager>
 
+        <ion-slide style="background-color:">
+            <h2><b> දකුනේ පින් ඇති </b> </h2>
+            <p>
+                දකුනේ පින් ඇති පින් බිම වැවුරුකන්නල <br>
+                සමාවෙන්න විහාරයේ කඳුලු වැටුනට<br>
+                මොර සූරන වැහි කටු එන කඳු ඉරාගෙන<br>
+                කූඩුව ගං වතුරෙ ගියා පැටව් එක්කම<br><br>
+
+                දකුනේ පින් ඇති පින් බිම..<br><br>
+
+                අප්පච්චි කිය කිය මුලු දවස පුරාම<br>
+                කතා කරපු හඬ ඇසේවි තාම ලඟලඟ<br>
+                අනගතේ මා දුටු සුභ නිමිති සේරම...<br>
+                මගෙන් උදුරගෙන ගං දිය ගියා මුහුදට<br><br>
+
+                දකුනේ පින් ඇති පින් බිම ...<br><br>
+
+                පිහිට වෙලා බේරගන්න මගේ කූඩුව<br>
+                පින් අරගත් දෙවියන්වත් උන්නෙ නෑ ලඟ<br>
+                සොඳුර සමග දරුවන් බිලි ගත්ත වගේම...<br>
+                මාවත් බිලි ගත්තානම් දුකක් නෑ මට<br><br>
+
+                දකුනේ පින් ඇති පින් බිම..<br><br>
+            </p>
+            <ion-list>
+                <audio-track #audio *ngFor="let track of myTracks"  [track]="track" (onFinish)="onTrackFinished($event)">
+                    <ion-item>  
+                        <ion-thumbnail item-left>
+                            <img src="{{audio.art}}">
+                            <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+                        </ion-thumbnail>
+                        <div item-content style="width:100%">
+                            <p><strong>{{audio.title}}</strong>  <em>{{audio.artist}}</em></p>
+                            <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+                        </div>
+                    </ion-item>    
+                </audio-track>
+            </ion-list> 
+            <button class="listen" ion-button color="secondary" (click)="Dakune()"> <span style="padding-right: 10px;"><ion-icon ios="ios-musical-notes" md="md-musical-notes"></ion-icon></span>Listen Online</button>
+
+        </ion-slide>
+
+        </ion-slides>
 </ion-content>

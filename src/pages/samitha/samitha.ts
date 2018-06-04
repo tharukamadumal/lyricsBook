@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {AudioProvider} from 'ionic-audio';
 
 /**
- * Generated class for the ChandanaPage page.
+ * Generated class for the SamithaPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,11 +11,12 @@ import {AudioProvider} from 'ionic-audio';
 
 @IonicPage()
 @Component({
-    selector: 'page-chandana',
-    templateUrl: 'chandana.html',
+  selector: 'page-samitha',
+  templateUrl: 'samitha.html',
 })
-export class ChandanaPage {
-    myTracks: any[];
+export class SamithaPage {
+
+myTracks: any[];
     myTracks2: any[];
     myTracks3: any[];
     myTracks4: any[];
@@ -23,15 +24,13 @@ export class ChandanaPage {
     myTracks6: any[];
     myTracks7: any[];
     myTracks8: any[];
-    myTracks9: any[];
-    myTracks10: any[];
     allTracks: any[];
     selectedTrack: any;
 
-    constructor(public navCtrl: NavController, public navParams: NavParams, private _audioProvider: AudioProvider) {
-    }
+  constructor(public navCtrl: NavController, public navParams: NavParams, private _audioProvider: AudioProvider) {
+  }
 
-    ngAfterContentInit() {
+  ngAfterContentInit() {
         // get all tracks managed by AudioProvider so we can control playback via the API
         this.allTracks = this._audioProvider.tracks;
     }
@@ -50,80 +49,80 @@ export class ChandanaPage {
         console.log('Track finished', track)
     }
 
-    EhalaMal() {
+    laaSanda() {
         this.myTracks = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Ehela%20Mal%20Pipena%20%20__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
-            artist: '  ඇහල මල් ‍පිපෙනා ',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/La%20Sanda%20Aye%20Payala__Samitha%20Mudunkotuwa_mp3[www.sarigama.lk].mp3',
+            artist: ' ලා සඳ ආයේ පායාලා.. ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }	
+
+    ranaHansa() {
+        this.myTracks2 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Rana%20Hansa%20Yuwala_Samitha%20Mudunkotuwa__Samitha%20Mudunkotuwa_mp3[sarigama.lk].mp3',
+            artist: 'රණ හංස යුවල නිමල නිල් ජලාසේ  ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
 
-    premayaLowa() {
-        this.myTracks2 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Premaya%20Lowa%20__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
-            artist: '  ප්‍රේමය ලොව   ',
-            art: 'assets/imgs/play.png',
-            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
-        }]
-    }
-    
-    muthuMaala() {
-        this.myTracks4 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Muthumala%20Hatha%20%20__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
-            artist: ' මුතු මාල',
-            art: 'assets/imgs/play.png',
-            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
-        }]
-    }
-    
-    suwandaThiya() {
+    pipichchaMal() {
         this.myTracks3 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Suwanda%20Thiya%20%20__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
-            artist: '   සුවඳ තියා  ',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Pipichcha%20Mal__Samitha%20Mudunkotuwa_mp3[sarigama.lk].mp3 ',
+            artist: ' පිපිච්ච මල් උඩ  ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
-    
-    kawiSipada() {
+
+    iraPaaya() {
+        this.myTracks4 = [{
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Ira%20Paaya_Samitha%20Mudunkotuwa%20V%201__Samitha%20Mudunkotuwa_mp3[sarigama.lk].mp3',
+            artist: '  ඉර පායා  ',
+            art: 'assets/imgs/play.png',
+            preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+        }]
+    }
+
+    saaraSadisi() {
         this.myTracks5 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Kavi%20Seepada%20%20__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
-            artist: 'කවි සීපද ',
+            src: 'http://s1.jayasrilanka.info/albums/Iraj-Weeraratne/Sara%20Sadisi%20Pethi%20-%20Iraj%20Ft%20Samitha%20Mudunkotuwa.mp3',
+            artist: ' සාර සදිසි පෙති ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
-    
-    sandaYathra() {
+
+    kolompure() {
         this.myTracks6 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Sanda%20Yaathra%20Kala%20__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
-            artist: '  සඳ යාත්‍රා කලා ',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Kolompure_Samitha%20Mudunkotuwa__Samitha%20Mudunkotuwa_mp3[sarigama.lk].mp3',
+            artist: '  කොලොම්පුරේ ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
-    
-    pamaaWedie() {
+
+    gumuGumuwa() {
         this.myTracks7 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Pama%20Weddi__Chandana%20Liyanarachchi_mp3[sarigama.lk].mp3',
-            artist: ' පමා වැඩියි ඔබ',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Gumu%20Gumuwa%20Wadule_Samitha%20Mudunkotuwa__Samitha%20Mudunkotuwa_mp3[sarigama.lk].mp3',
+            artist: ' ගුමු ගුමුව ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
-    
-    mageAdare() {
+
+    mamaSil() {
         this.myTracks8 = [{
-            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Mage%20Adare%20Tharam__Chandana%20Liyanarachchi_mp3[www.sarigama.lk].mp3',
-            artist: '  මගෙ ආදරේ තරම්',
+            src: 'http://sarigama.lk/resources/audiofiles/mp3/128/Mama%20Sil%20Binda%20Gaththe__Samitha%20and%20Ranjan_mp3[www.sarigama.lk].mp3',
+            artist: '   මම සිල් බිඳ ගත්තෙ  ',
             art: 'assets/imgs/play.png',
             preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
         }]
     }
-    
-    ionViewDidLoad() {
-        console.log('ionViewDidLoad ChandanaPage');
-    }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad SamithaPage');
+  }
 
 }
